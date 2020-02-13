@@ -1,0 +1,3 @@
+_vIN (IN 0) vsource val0=0 val1=5 period=2n delay=0 rise=200p fall=200p width=1n type=pulse
+_vGND! (GND! 0) vsource dc=0 type=dc
+_vVDD! (VDD! 0) vsource dc=5 type=dc

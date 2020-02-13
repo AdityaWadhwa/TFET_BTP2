@@ -1,0 +1,32 @@
+// Generated for: spectre
+// Generated on: Feb 13 17:03:59 2020
+// Design library name: inverter
+// Design cell name: inv
+// Design view name: schematic
+simulator lang=spectre
+global 0 VDD! GND!
+include "/home/install/FOUNDRY/analog/90nm/libs.oa22/gpdk090/../../models/spectre/gpdk090.scs" section=NN
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=stat
+
+// Library name: inverter
+// Cell name: inv
+// View name: schematic
+NM0 (OUT IN GND! GND!) gpdk090_nmos1v_hvt w=(120n) l=100n as=69.6f \
+        ad=69.6f ps=1.16u pd=1.16u m=(1)*(1) simM=(1)*(1)
+PM0 (OUT IN VDD! VDD!) gpdk090_pmos1v_hvt w=(480n) l=100n as=134.4f \
+        ad=134.4f ps=1.52u pd=1.52u m=(1)*(1) simM=(1)*(1)
+include "./_graphical_stimuli.scs"
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=10n errpreset=moderate write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

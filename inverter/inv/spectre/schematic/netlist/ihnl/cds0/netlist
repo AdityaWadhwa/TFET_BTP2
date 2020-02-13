@@ -1,0 +1,8 @@
+
+// Library name: inverter
+// Cell name: inv
+// View name: schematic
+NM0 (OUT IN GND! GND!) gpdk090_nmos1v_hvt w=(120n) l=100n as=69.6f \
+        ad=69.6f ps=1.16u pd=1.16u m=(1)*(1) simM=(1)*(1)
+PM0 (OUT IN VDD! VDD!) gpdk090_pmos1v_hvt w=(480n) l=100n as=134.4f \
+        ad=134.4f ps=1.52u pd=1.52u m=(1)*(1) simM=(1)*(1)

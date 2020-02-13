@@ -1,0 +1,3 @@
+simulator lang=spectre
+include "gpdk090_nmos1v_hvt.scs"
+include "gpdk090_pmos1v_hvt.scs"
