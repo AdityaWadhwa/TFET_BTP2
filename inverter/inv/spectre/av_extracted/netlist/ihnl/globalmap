@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+inverter/inv/av_extracted inv
+$endmodel
+$net
+GND! GND!
+VDD! VDD!
+$endnet
+$param
+vs vs
+$endparam

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "17.1.0.238.isr4"
-"date" "5:04:41 PM, Thur Feb 13, 2020"
+"date" "1:01:03 PM, Fri Feb 14, 2020"
 "design" "// Generated for: spectre"
 "analysis type" "info.subckts"
 "analysis name" "subckts"
@@ -34,9 +34,9 @@ VALUE
 ""
 )
 "nmos1" "subckt" (
-""
-""
-""
+"ad as pd region w ps l"
+"D G S B"
+"NM0"
 )
 "xjvar_nf36" "subckt" (
 ""
@@ -74,9 +74,9 @@ VALUE
 ""
 )
 "gpdk090_nmos1v_hvt" "subckt" (
-"geo_fac mm_dl ad mm_mu0 nrs as garea mm_delvt mm_dtox pd w mm_dw ps mareverse varvt l maforward simM nrd"
-"D G S B"
-"NM0"
+""
+""
+""
 )
 "gpdk090_vpnp5" "subckt" (
 ""
@@ -299,9 +299,9 @@ VALUE
 ""
 )
 "pmos1" "subckt" (
-""
-""
-""
+"ad as pd region w ps l"
+"D G S B"
+"PM0"
 )
 "snacapacitor" "subckt" (
 ""
@@ -319,9 +319,9 @@ VALUE
 ""
 )
 "gpdk090_pmos1v_hvt" "subckt" (
-"geo_fac mm_dl ad mm_mu0 nrs as garea mm_delvt mm_dtox pd w mm_dw ps mareverse varvt l maforward simM nrd"
-"D G S B"
-"PM0"
+""
+""
+""
 )
 "gpdk090_nmos1v" "subckt" (
 ""

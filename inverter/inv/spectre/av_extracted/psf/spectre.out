@@ -1,0 +1,251 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.238.isr4 64bit -- 28 Apr 2018
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: root   Host: client2   HostID: 7F0100   PID: 13575
+Memory  available: 192.2703 MB  physical: 3.7820 GB
+Linux   : Red Hat Enterprise Linux Server release 7.5 (Maipo)
+CPU Type: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3851.8] (  4 ),  1 [3881.9] (  5 ),  2 [3865.5] (  6 )
+                 3 [3932.1] (  7 )
+        
+System load averages (1min, 5min, 15min) : 1.6 %, 2.2 %, 2.1 %
+Hyperthreading is enabled
+
+
+Simulating `input.scs' on client2 at 1:19:02 PM, Sat Feb 15, 2020 (process id: 13575).
+Current working directory: /home/user/say_btp2/inverter/inv/spectre/av_extracted/netlist
+Command line:
+    /home/install/SPECTRE171/tools/bin/spectre -64 input.scs +escchars  \
+        +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre0_3204_16 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 13575
+
+Loading /home/install/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/install/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/install/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/install/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/install/SPECTRE171/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/user/say_btp2/inverter/inv/spectre/av_extracted/netlist/input.scs
+Reading file:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mos25gen.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/nmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/pmos1.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/resistor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/capacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/diode.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/bipolar.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/rfmos.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/xjvar_nf36.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/mcxjvar_w40.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/snacapacitor.scs
+Reading file:  /home/install/FOUNDRY/analog/180nm/models/spectre/cmodel.scs
+Reading file:  /home/user/say_btp2/inverter/inv/spectre/av_extracted/netlist/_graphical_stimuli.scs
+Time for NDB Parsing: CPU = 89.887 ms, elapsed = 148.665 ms.
+Time accumulated: CPU = 103.051 ms, elapsed = 148.668 ms.
+Peak resident memory used = 47.7 Mbytes.
+
+Reading link:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/install/SPECTRE171/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 15.395 ms, elapsed = 15.3971 ms.
+Time accumulated: CPU = 118.567 ms, elapsed = 164.185 ms.
+Peak resident memory used = 55.1 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1.065 ms, elapsed = 1.06597 ms.
+Time accumulated: CPU = 119.738 ms, elapsed = 165.355 ms.
+Peak resident memory used = 55.7 Mbytes.
+
+
+Global user options:
+         psfversion = 1.1.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 14
+            bsim3v3 2     
+          capacitor 27    
+           resistor 10    
+            vsource 3     
+
+Analysis and control statement inventory:
+                 dc 2     
+               info 7     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 1.834 ms, elapsed = 61.65 ms.
+Time accumulated: CPU = 121.717 ms, elapsed = 227.149 ms.
+Peak resident memory used = 57.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_3204_16, ).
+
+Warning from spectre.
+    WARNING (SPECTRE-16707): Only tran supports psfxl format, result of other analyses will be in psfbin format.
+
+
+******************
+DC Analysis `dcOp'
+******************
+
+Opening the PSF file ../psf/dcOp.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(VDD!) = 1.8 V
+I: I(_vVDD!:p) = 22.13 uA
+Convergence achieved in 7 iterations.
+DC simulation time: CPU = 1.72 ms, elapsed = 32.8522 ms.
+Total time required for dc analysis `dcOp': CPU = 1.755 ms, elapsed = 32.8848 ms.
+Time accumulated: CPU = 127.437 ms, elapsed = 346.894 ms.
+Peak resident memory used = 58.3 Mbytes.
+
+dcOpInfo: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/dcOpInfo.info ...
+
+*********************************
+DC Analysis `dc': vs = (0 -> 1.8)
+*********************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+    dc: vs = 72e-03         (4 %), step = 36e-03          (2 %)
+    dc: vs = 108e-03        (6 %), step = 36e-03          (2 %)
+    dc: vs = 144e-03        (8 %), step = 36e-03          (2 %)
+    dc: vs = 180e-03       (10 %), step = 36e-03          (2 %)
+    dc: vs = 216e-03       (12 %), step = 36e-03          (2 %)
+    dc: vs = 252e-03       (14 %), step = 36e-03          (2 %)
+    dc: vs = 288e-03       (16 %), step = 36e-03          (2 %)
+    dc: vs = 324e-03       (18 %), step = 36e-03          (2 %)
+    dc: vs = 360e-03       (20 %), step = 36e-03          (2 %)
+    dc: vs = 396e-03       (22 %), step = 36e-03          (2 %)
+    dc: vs = 432e-03       (24 %), step = 36e-03          (2 %)
+    dc: vs = 468e-03       (26 %), step = 36e-03          (2 %)
+    dc: vs = 504e-03       (28 %), step = 36e-03          (2 %)
+    dc: vs = 540e-03       (30 %), step = 36e-03          (2 %)
+    dc: vs = 576e-03       (32 %), step = 36e-03          (2 %)
+    dc: vs = 612e-03       (34 %), step = 36e-03          (2 %)
+    dc: vs = 648e-03       (36 %), step = 36e-03          (2 %)
+    dc: vs = 684e-03       (38 %), step = 36e-03          (2 %)
+    dc: vs = 720e-03       (40 %), step = 36e-03          (2 %)
+    dc: vs = 756e-03       (42 %), step = 36e-03          (2 %)
+    dc: vs = 792e-03       (44 %), step = 36e-03          (2 %)
+    dc: vs = 828e-03       (46 %), step = 36e-03          (2 %)
+    dc: vs = 864e-03       (48 %), step = 36e-03          (2 %)
+    dc: vs = 900e-03       (50 %), step = 36e-03          (2 %)
+    dc: vs = 936e-03       (52 %), step = 36e-03          (2 %)
+    dc: vs = 972e-03       (54 %), step = 36e-03          (2 %)
+    dc: vs = 1.008         (56 %), step = 36e-03          (2 %)
+    dc: vs = 1.044         (58 %), step = 36e-03          (2 %)
+    dc: vs = 1.08          (60 %), step = 36e-03          (2 %)
+    dc: vs = 1.116         (62 %), step = 36e-03          (2 %)
+    dc: vs = 1.152         (64 %), step = 36e-03          (2 %)
+    dc: vs = 1.188         (66 %), step = 36e-03          (2 %)
+    dc: vs = 1.224         (68 %), step = 36e-03          (2 %)
+    dc: vs = 1.26          (70 %), step = 36e-03          (2 %)
+    dc: vs = 1.296         (72 %), step = 36e-03          (2 %)
+    dc: vs = 1.332         (74 %), step = 36e-03          (2 %)
+    dc: vs = 1.368         (76 %), step = 36e-03          (2 %)
+    dc: vs = 1.404         (78 %), step = 36e-03          (2 %)
+    dc: vs = 1.44          (80 %), step = 36e-03          (2 %)
+    dc: vs = 1.476         (82 %), step = 36e-03          (2 %)
+    dc: vs = 1.512         (84 %), step = 36e-03          (2 %)
+    dc: vs = 1.548         (86 %), step = 36e-03          (2 %)
+    dc: vs = 1.584         (88 %), step = 36e-03          (2 %)
+    dc: vs = 1.62          (90 %), step = 36e-03          (2 %)
+    dc: vs = 1.656         (92 %), step = 36e-03          (2 %)
+    dc: vs = 1.692         (94 %), step = 36e-03          (2 %)
+    dc: vs = 1.728         (96 %), step = 36e-03          (2 %)
+    dc: vs = 1.764         (98 %), step = 36e-03          (2 %)
+    dc: vs = 1.8          (100 %), step = 36e-03          (2 %)
+
+Maximum value achieved for any signal of each quantity: 
+V: V(2\:IN) = 1.8 V
+I: I(_vVDD!:p) = 5.223 pA
+DC simulation time: CPU = 31.331 ms, elapsed = 62.638 ms.
+
+Notice from spectre at vs = 1.8 during DC analysis `dc'.
+    The value of parameter 'vs' has been reset to the original value 1.
+
+Total time required for dc analysis `dc': CPU = 31.385 ms, elapsed = 62.69 ms.
+Time accumulated: CPU = 161.105 ms, elapsed = 466.412 ms.
+Peak resident memory used = 59.1 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (1:29:52 PM, Sat Feb 15, 2020):
+Time used: CPU = 194 ms, elapsed = 649 s (10m  49.4s), util. = 29.9e-03%.
+Time spent in licensing: elapsed = 43.5 ms.
+Peak memory used = 59.9 Mbytes.
+Simulation started at: 1:19:02 PM, Sat Feb 15, 2020, ended at: 1:29:52 PM, Sat Feb 15, 2020, with elapsed time (wall clock): 649 s (10m  49.4s).
+spectre completes with 0 errors, 2 warnings, and 1 notice.

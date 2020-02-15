@@ -1,0 +1,6 @@
+HEADER
+"PSFversion" "1.00"
+"c1n c2n c3n c4n c5n c6n c7n c8n c9n c10n c11n c12n c13n c14n c15n c16n c17n c18n c19n c20n c21n c22n c23n c24n c25n c26n c27n" "analogLib_pcapacitor_spectre"
+"rf1n rf2n rf3n rf4n rf5n rf6n rf7n rf8n rg1n rg2n" "analogLib_presistor_spectre"
+"PM0n" "gpdk180_pmos_spectre"
+"NM0n" "gpdk180_nmos_spectre"

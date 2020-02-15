@@ -1,0 +1,15 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "inv"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "VDD! GND!"
+  hierDelim "."
+  netlistDir "/home/user/say_btp2/inverter/inv/spectre/av_extracted/netlist"
+ )
+( model
+( "inverter/inv/av_extracted" "inv" )
+ )
+( "inv" "ihnl/cds0/map" )
+ )

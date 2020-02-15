@@ -1,6 +1,6 @@
 hnlLastStopCellInfo = '(
-                           ( "gpdk090" "nmos1v_hvt" "spectre" "50" "1297330481" )
-                          ( "gpdk090" "pmos1v_hvt" "spectre" "50" "1297330482" )
+                           ( "gpdk180" "nmos" "spectre" "50" "1222278576" )
+                          ( "gpdk180" "pmos" "spectre" "50" "1222278576" )
                        )
 hnlLastMaxNameLength = 1024
 hnlLastNamePrefix = "hnl_"
@@ -757,7 +757,7 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "inverter" "1581583298" )
+                    ( "inverter" "1581594966" )
                   )
 hnlLastConstants = '(
                       "P_CELSIUS0"

@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Feb 15 13:00:51 2020
+// Design library name: inverter
+// Design cell name: inv
+// Design view name: av_extracted
+simulator lang=spectre
+global 0 VDD! GND!

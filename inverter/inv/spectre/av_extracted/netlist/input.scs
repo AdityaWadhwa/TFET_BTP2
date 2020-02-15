@@ -1,0 +1,70 @@
+// Generated for: spectre
+// Generated on: Feb 15 13:00:51 2020
+// Design library name: inverter
+// Design cell name: inv
+// Design view name: av_extracted
+simulator lang=spectre
+global 0 VDD! GND!
+parameters vs=1
+include "/home/install/FOUNDRY/analog/180nm/models/spectre/gpdk.scs" section=stat
+
+// Library name: inverter
+// Cell name: inv
+// View name: av_extracted
+c1 (\1\:IN VDD!) cmodel c=4.42549e-18
+c2 (VDD! \2\:GND!) cmodel c=1.80251e-16
+c3 (\1\:OUT \2\:GND!) cmodel c=2.20645e-16
+c4 (IN \2\:GND!) cmodel c=2.12039e-16
+c5 (\3\:OUT \3\:IN) cmodel c=2.35873e-17
+c6 (\2\:IN \2\:VDD!) cmodel c=9.33046e-17
+c7 (OUT \2\:GND!) cmodel c=1.17137e-16
+c8 (\1\:GND! \3\:IN) cmodel c=2.09715e-17
+c9 (\2\:OUT \2\:IN) cmodel c=3.74237e-17
+c10 (\3\:OUT \1\:IN) cmodel c=1.33219e-17
+c11 (\1\:VDD! \2\:IN) cmodel c=2.6908e-17
+c12 (\1\:GND! \1\:IN) cmodel c=2.50968e-17
+c13 (\2\:IN \2\:GND!) cmodel c=1.02427e-18
+c14 (\1\:IN \2\:VDD!) cmodel c=3.1604e-17
+c15 (\1\:GND! \3\:OUT) cmodel c=2.89207e-17
+c16 (\2\:OUT \1\:IN) cmodel c=1.7927e-17
+c17 (\3\:IN \2\:GND!) cmodel c=9.19528e-17
+c18 (\1\:IN \1\:VDD!) cmodel c=1.97401e-17
+c19 (\1\:IN \2\:GND!) cmodel c=2.65434e-16
+c20 (\1\:IN \1\:OUT) cmodel c=3.4403e-17
+c21 (\3\:OUT \2\:GND!) cmodel c=1.00643e-16
+c22 (\2\:OUT \2\:VDD!) cmodel c=9.37428e-17
+c23 (\1\:VDD! \2\:OUT) cmodel c=5.61293e-17
+c24 (\1\:OUT \2\:VDD!) cmodel c=2.31935e-17
+c25 (\2\:OUT \2\:GND!) cmodel c=3.20983e-17
+c26 (\1\:IN GND!) cmodel c=5.3846e-18
+c27 (\1\:VDD! GND!) cmodel c=3.10674e-19
+rf1 (\1\:GND! GND!) resistor r=7.4409 tc1=0 tc2=0 c=0
+rf2 (GND! \2\:GND!) resistor r=7.2812 tc1=0 tc2=0 c=0
+rf3 (\1\:VDD! VDD!) resistor r=7.5146 tc1=0 tc2=0 c=0
+rf4 (VDD! \2\:VDD!) resistor r=7.3012 tc1=0 tc2=0 c=0
+rf5 (IN \1\:IN) resistor r=6.1067 tc1=0 tc2=0 c=0
+rf6 (OUT \1\:OUT) resistor r=0.397 tc1=0 tc2=0 c=0
+rf7 (\1\:OUT \2\:OUT) resistor r=7.5542 tc1=0 tc2=0 c=0
+rf8 (\1\:OUT \3\:OUT) resistor r=7.4617 tc1=0 tc2=0 c=0
+rg1 (\2\:IN \1\:IN) resistor r=49.1381 tc1=0 tc2=0 c=0
+rg2 (\1\:IN \3\:IN) resistor r=41.2729 tc1=0 tc2=0 c=0
+PM0 (\2\:OUT \2\:IN \1\:VDD! \2\:VDD!) pmos1 w=8e-07 l=1.8e-07 as=4.8e-13 \
+        ad=4.8e-13 ps=2.8e-06 pd=2.8e-06 m=(1)*(1)
+NM0 (\3\:OUT \3\:IN \1\:GND! \2\:GND!) nmos1 w=4e-07 l=1.8e-07 as=4.4e-13 \
+        ad=4.4e-13 ps=2.8e-06 pd=2.8e-06 m=(1)*(1)
+include "./_graphical_stimuli.scs"
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+dcOp dc write="spectre.dc" maxiters=150 maxsteps=10000 annotate=status
+dcOpInfo info what=oppoint where=rawfile
+dc dc param=vs start=0 stop=1.8 oppoint=rawfile maxiters=150 \
+    maxsteps=10000 annotate=status
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

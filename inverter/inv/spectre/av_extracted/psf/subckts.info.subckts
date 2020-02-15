@@ -1,0 +1,121 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "17.1.0.238.isr4"
+"date" "1:19:03 PM, Sat Feb 15, 2020"
+"design" "// Generated for: spectre"
+"analysis type" "info.subckts"
+"analysis name" "subckts"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"subckt" STRUCT(
+"subckt_params" STRING *
+"subckt_terminals" STRING *
+"subckt_instances" STRING *
+) PROP(
+"key" "sub"
+)
+VALUE
+"gpdk180_m2res" "subckt" (
+""
+""
+""
+)
+"xjvar_nf36" "subckt" (
+""
+""
+""
+)
+"cmodel" "subckt" (
+"c"
+"PLUS MINUS"
+"c1 c2 c3 c4 c5 c6 c7 c8 c9 c10 c11 c12 c13 c14 c15 c16 c17 c18 c19 c20 c21 c22 c23 c24 c25 c26 c27"
+)
+"gpdk180_pplusres" "subckt" (
+""
+""
+""
+)
+"pmos_rf" "subckt" (
+""
+""
+""
+)
+"gpdk180_m3res" "subckt" (
+""
+""
+""
+)
+"nmos_rf" "subckt" (
+""
+""
+""
+)
+"gpdk180_nwellres" "subckt" (
+""
+""
+""
+)
+"nmos1" "subckt" (
+"ad as pd region w ps l"
+"D G S B"
+"NM0"
+)
+"xjvar_w40" "subckt" (
+""
+""
+""
+)
+"gpdk180_nplusres" "subckt" (
+""
+""
+""
+)
+"gpdk180_m6res" "subckt" (
+""
+""
+""
+)
+"gpdk180_m4res" "subckt" (
+""
+""
+""
+)
+"pmos1" "subckt" (
+"ad as pd region w ps l"
+"D G S B"
+"PM0"
+)
+"gpdk180_polyres" "subckt" (
+""
+""
+""
+)
+"snacapacitor" "subckt" (
+""
+""
+""
+)
+"gpdk180_polyhres" "subckt" (
+""
+""
+""
+)
+"mimcap" "subckt" (
+""
+""
+""
+)
+"gpdk180_m5res" "subckt" (
+""
+""
+""
+)
+"gpdk180_m1res" "subckt" (
+""
+""
+""
+)
+END

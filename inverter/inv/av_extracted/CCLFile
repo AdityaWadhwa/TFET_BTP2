@@ -1,0 +1,59 @@
+#
+# OPTION COMMAND FILE created by Cadence Quantus QRC Extraction Version 18.1.2-s132 from CCL
+#
+capacitance \
+	 -decoupling_factor 1.0 \
+	 -ground_net "gnd"
+device_reduction \
+	 -m_factor infinite
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -array_vias_spacing auto \
+	 -macro_cells_type "default" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -max_via_array_size \
+		"auto" \
+	 -net_name_space "LAYOUT"
+filter_cap \
+	 -exclude_self_cap "true"
+filter_coupling_cap \
+	 -coupling_cap_threshold_absolute 0.01 \
+	 -coupling_cap_threshold_relative 0.001
+filter_res \
+	 -merge_parallel_res false \
+	 -min_res 0.001
+global_nets \
+	 -nets_file "/home/user/qrc.GLOBAL.nets"
+input_db -type assura \
+	 -design_cell_name "inv layout inverter" \
+	 -directory_name "/home/user" \
+	 -format "DFII" \
+	 -run_name "inv"
+log_file \
+	 -file_name "/home/user/qrc.inv.log"
+output_db -type extracted_view \
+	 -cap_component "pcapacitor" \
+	 -cap_property_name "c" \
+	 -enable_cellview_check true \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "true" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted"
+output_setup \
+	 -directory_name "/home/user" \
+	 -temporary_directory_name "inv"
+process_technology \
+	 -technology_corner \
+		"default" \
+	 -technology_library_file "/home/install/FOUNDRY/analog/180nm/assura_tech.lib" \
+	 -technology_name "gpdk180" \
+	 -temperature \
+		25.0
+
+

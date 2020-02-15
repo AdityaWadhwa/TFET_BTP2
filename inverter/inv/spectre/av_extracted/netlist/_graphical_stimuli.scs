@@ -1,0 +1,3 @@
+_vIN (IN 0) vsource dc=vs type=dc
+_vGND! (GND! 0) vsource dc=0 type=dc
+_vVDD! (VDD! 0) vsource dc=1.8 type=dc

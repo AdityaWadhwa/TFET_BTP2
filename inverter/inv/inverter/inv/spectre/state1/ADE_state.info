@@ -1,0 +1,3 @@
+projectDir = '"./say_btp2/inverter"
+designInfo = '("inverter" "inv" "schematic" "spectre")
+descriptionText = "None"

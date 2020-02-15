@@ -1,0 +1,4 @@
+simulator lang=spectre
+include "cmodel.scs"
+include "nmos1.scs"
+include "pmos1.scs"

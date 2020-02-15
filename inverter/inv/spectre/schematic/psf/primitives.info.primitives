@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "17.1.0.238.isr4"
-"date" "5:04:41 PM, Thur Feb 13, 2020"
+"date" "1:01:03 PM, Fri Feb 14, 2020"
 "design" "// Generated for: spectre"
 "analysis type" "info.primitives"
 "analysis name" "primitives"
