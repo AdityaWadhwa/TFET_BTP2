@@ -1,0 +1,8 @@
+Spectre (R) Circuit Simulator
+Version 17.1.0.238.isr4 64bit -- 28 Apr 2018
+Simulating `input.scs' on client2 at 7:12:12 PM, Mon Feb 17, 2020 (process id: 12579).
+H = mpsImport( "spectre" "ipi" "v0.0" ?session "spectre0_14745_10" )
+H->sclSetResultDir( "../psf" )
+H->sclRun( "all" )
+sclCkt0xa490ce0 = H->sclGetCircuit(  "" )
+H->sclQuit(  )

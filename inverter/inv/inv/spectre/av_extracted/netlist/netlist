@@ -1,0 +1,12 @@
+
+// Library name: inverter
+// Cell name: inv
+// View name: av_extracted
+PM0 (OUT IN vdd! vdd!) g45p1hvt w=(3e-07) l=4.5e-08 nf=1 as=4.2e-14 \
+        ad=4.2e-14 ps=8.8e-07 pd=8.8e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=118.121 scb=0.0795488 \
+        scc=0.0136537 m=(1)
+NM0 (OUT IN 0 0) g45n1hvt w=(1.2e-07) l=4.5e-08 nf=1 as=1.68e-14 \
+        ad=1.68e-14 ps=5.2e-07 pd=5.2e-07 nrd=1.16667 nrs=1.16667 \
+        sa=1.4e-07 sb=1.4e-07 sd=160n sca=27.6536 scb=0.0307855 \
+        scc=0.00226322 m=(1)

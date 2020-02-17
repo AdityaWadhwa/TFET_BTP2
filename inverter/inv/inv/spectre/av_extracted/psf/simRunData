@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"inverter\" \"inv\" \"av_extracted\" \"\")"
+"simulator" "spectre"
+"temperature" "27"
+"host" ""
+"date" "Feb 17 19:12:10 2020"
+"title" ""
+"analysisList" "()"
+END
